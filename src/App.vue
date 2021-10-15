@@ -1,20 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Heaters';
+  src: url('./assets/Heaters.eot');
+  src: url('./assets/Heaters.eot?#iefix') format('embedded-opentype'),
+       url('./assets/Heaters.svg#Heaters') format('svg'),
+       url('./assets/Heaters.ttf') format('truetype'),
+       url('./assets/Heaters.woff') format('woff'),
+       url('./assets/Heaters.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Heaters', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: white;
+  background-color: black;
+  min-height: 100vh;
 }
 
 #nav {
